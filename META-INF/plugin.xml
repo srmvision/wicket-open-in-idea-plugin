@@ -1,13 +1,22 @@
 <idea-plugin version="2">
-  <name>Plugin name here</name>
-  <description>short description of the plugin</description>
-  <version>1.0</version>
-  <vendor>YourCompany</vendor>
+  <name>Wicket open in IDEA</name>
+  <description>
+      In a real world application written with Apache Wicket framework, it is sometimes difficult to find the correct
+      class in its IDE. With the help of a tiny lib for Apache Wicket, a browser extension and this plugin, you will
+      be able to open the classes straight from your browser.
+  </description>
+  <version>0.1</version>
+  <vendor>Cedric Gatay - SRMvision</vendor>
 
   <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
   <idea-version since-build="93.13"/>
 
   <application-components>
+      <component>
+          <implementation-class>
+              com.srmvision.tools.wicketdebug.idea.ApplicationComponent.WicketDebugEntryPoint
+          </implementation-class>
+      </component>
     <!-- Add your application components here -->
   </application-components>
 
