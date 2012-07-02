@@ -25,7 +25,6 @@ import com.sun.net.httpserver.HttpServer;
 import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 
-import javax.swing.Icon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
@@ -94,11 +93,6 @@ public class WicketDebugEntryPoint implements ApplicationComponent, Configurable
     @Override
     public String getDisplayName() {
         return "Wicket Open In IDEA";
-    }
-
-    @Override
-    public Icon getIcon() {
-        return null;
     }
 
     @Override
